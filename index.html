@@ -65,9 +65,9 @@
         :root {
             --neon-blue: #00f3ff;
             --neon-purple: #bc13fe;
-            --neon-pink: '#ff006e';
-            --neon-cyan: '#00d9ff';
-            --bg-dark: '#0a0a0f';
+            --neon-pink: #ff006e;
+            --neon-cyan: #00d9ff;
+            --bg-dark: #0a0a0f;
             --bg-card: rgba(20, 20, 35, 0.6);
         }
 
@@ -84,7 +84,6 @@
             overflow-x: hidden;
         }
 
-        /* Custom Scrollbar */
         ::-webkit-scrollbar {
             width: 6px;
             height: 6px;
@@ -97,7 +96,6 @@
             border-radius: 3px;
         }
 
-        /* Glassmorphism */
         .glass {
             background: rgba(20, 20, 35, 0.6);
             backdrop-filter: blur(20px);
@@ -112,7 +110,6 @@
             border: 1px solid rgba(255, 255, 255, 0.1);
         }
 
-        /* Neon Glow Effects */
         .neon-text {
             text-shadow: 0 0 10px var(--neon-blue), 0 0 20px var(--neon-blue), 0 0 40px var(--neon-purple);
         }
@@ -154,7 +151,6 @@
             opacity: 0.6;
         }
 
-        /* Gradient Border */
         .gradient-border {
             position: relative;
             background: rgba(20, 20, 35, 0.8);
@@ -173,7 +169,6 @@
             pointer-events: none;
         }
 
-        /* Particle Canvas */
         #particles-canvas {
             position: fixed;
             top: 0;
@@ -184,7 +179,6 @@
             pointer-events: none;
         }
 
-        /* Loading Screen */
         .loader-container {
             position: fixed;
             inset: 0;
@@ -230,7 +224,6 @@
             to { transform: rotate(360deg); }
         }
 
-        /* Cursor Glow */
         .cursor-glow {
             position: fixed;
             width: 300px;
@@ -243,7 +236,6 @@
             transition: left 0.1s, top 0.1s;
         }
 
-        /* Chat Messages */
         .message-user {
             background: linear-gradient(135deg, rgba(0, 243, 255, 0.15), rgba(188, 19, 254, 0.15));
             border: 1px solid rgba(0, 243, 255, 0.3);
@@ -255,7 +247,6 @@
             border-radius: 20px 20px 20px 4px;
         }
 
-        /* Typing Indicator */
         .typing-dot {
             width: 8px;
             height: 8px;
@@ -266,7 +257,6 @@
         .typing-dot:nth-child(2) { animation-delay: 0.2s; }
         .typing-dot:nth-child(3) { animation-delay: 0.4s; }
 
-        /* Code Blocks */
         pre {
             background: #1e1e2e !important;
             border-radius: 12px;
@@ -278,7 +268,6 @@
             font-size: 0.875rem !important;
         }
 
-        /* Sidebar */
         .sidebar-item {
             transition: all 0.3s;
             position: relative;
@@ -304,7 +293,6 @@
             background: rgba(0, 243, 255, 0.08);
         }
 
-        /* Toggle Switch */
         .toggle-switch {
             appearance: none;
             width: 48px;
@@ -335,7 +323,6 @@
             box-shadow: 0 0 15px var(--neon-blue);
         }
 
-        /* Animations */
         @keyframes typing {
             0%, 60%, 100% { transform: translateY(0); }
             30% { transform: translateY(-10px); }
@@ -345,7 +332,6 @@
             animation: slideUp 0.5s ease-out forwards;
         }
 
-        /* Model Selector */
         .model-card {
             transition: all 0.3s;
             cursor: pointer;
@@ -359,7 +345,6 @@
             box-shadow: 0 0 20px rgba(0, 243, 255, 0.3);
         }
 
-        /* Notification */
         .notification {
             position: fixed;
             top: 20px;
@@ -378,7 +363,6 @@
             transform: translateX(0);
         }
 
-        /* Drag Drop Zone */
         .drag-zone {
             border: 2px dashed rgba(0, 243, 255, 0.3);
             transition: all 0.3s;
@@ -388,7 +372,6 @@
             background: rgba(0, 243, 255, 0.1);
         }
 
-        /* AI Avatar Pulse */
         .ai-avatar {
             position: relative;
         }
@@ -407,7 +390,6 @@
             50% { opacity: 0.5; transform: scale(1.1); }
         }
 
-        /* Markdown Content */
         .markdown-content h1, .markdown-content h2, .markdown-content h3 {
             color: var(--neon-blue);
             margin: 1rem 0 0.5rem;
@@ -446,7 +428,6 @@
             background: rgba(0, 243, 255, 0.1);
         }
 
-        /* Mobile Responsive */
         @media (max-width: 768px) {
             .sidebar {
                 transform: translateX(-100%);
@@ -460,7 +441,6 @@
             }
         }
 
-        /* Theme Variants */
         body.theme-ocean {
             --neon-blue: #00d4ff;
             --neon-purple: #0099ff;
@@ -482,7 +462,7 @@
     </style>
 </head>
 <body class="bg-[#0a0a0f] text-gray-100 min-h-screen">
-      <!-- Loading Screen -->
+        <!-- Loading Screen -->
     <div id="loader" class="loader-container">
         <div class="loader-ring mb-8"></div>
         <h1 class="text-3xl font-bold bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 bg-clip-text text-transparent animate-pulse">
@@ -969,7 +949,7 @@
                                         type="password" 
                                         id="api-key-input" 
                                         placeholder="sk-or-v1-..." 
-                                        value="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"
+                                        value=""
                                         class="flex-1 bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-cyan-500/50 transition-colors"
                                         onchange="saveApiKey(this.value)"
                                     >
@@ -1095,7 +1075,7 @@
     </div>
 
     <script>
-              // ==================== STATE MANAGEMENT ====================
+                // ==================== STATE MANAGEMENT ====================
         const state = {
             currentModel: 'openai/gpt-4o-mini',
             currentModelName: 'GPT-4o Mini',
@@ -1113,7 +1093,7 @@
                 sound: false,
                 theme: 'default'
             },
-            apiKey: localStorage.getItem('umer_ai_api_key') || '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'
+            apiKey: localStorage.getItem('umer_ai_api_key') || ''
         };
 
         // ==================== INITIALIZATION ====================
@@ -1231,8 +1211,8 @@
         function toggleParticles(enabled) {
             particlesEnabled = enabled;
             if (enabled) initParticles();
-      }
-              // ==================== CURSOR GLOW ====================
+                    }
+                // ==================== CURSOR GLOW ====================
         function initCursorGlow() {
             const glow = document.getElementById('cursor-glow');
             let mouseX = 0, mouseY = 0;
@@ -1339,8 +1319,8 @@
                 showNotification('Logged out successfully', 'success');
                 setTimeout(() => location.reload(), 1000);
             }
-                       }
-              // ==================== CHAT SYSTEM ====================
+        }
+                // ==================== CHAT SYSTEM ====================
         function handleKeyDown(e) {
             if (e.key === 'Enter' && !e.shiftKey) {
                 e.preventDefault();
@@ -1497,8 +1477,8 @@
             }
 
             state.isStreaming = false;
-      }
-              function addMessageToUI(role, text, image = null) {
+                            }
+                function addMessageToUI(role, text, image = null) {
             const container = document.getElementById('messages-container');
             const msgDiv = document.createElement('div');
             msgDiv.className = 'flex gap-4 max-w-3xl mx-auto animate-slide-up';
@@ -1630,37 +1610,19 @@
             const input = document.getElementById('chat-input');
             document.getElementById('send-btn').disabled = !input.value.trim();
         }
-              // ==================== VOICE ====================
+                // ==================== VOICE ====================
         function initVoiceRecognition() {
             if ('webkitSpeechRecognition' in window || 'SpeechRecognition' in window) {
                 const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
                 state.recognition = new SpeechRecognition();
                 state.recognition.continuous = false;
-                state.recognition.interimResults = true;
+ Bhai, **Part 2 se Part 11** de diye hain. Ab **Part 12 aur Part 13** (LAST) bhej raha hoon:
 
-                state.recognition.onresult = (event) => {
-                    const transcript = Array.from(event.results)
-                        .map(result => result[0])
-                        .map(result => result.transcript)
-                        .join('');
-                    document.getElementById('chat-input').value = transcript;
-                    autoResize(document.getElementById('chat-input'));
-                };
+---
 
-                state.recognition.onerror = (event) => {
-                    console.error('Speech recognition error:', event.error);
-                    showNotification('Voice input error: ' + event.error, 'error');
-                    state.voiceInputActive = false;
-                    updateVoiceButton();
-                };
+## 🔷 PART 12
 
-                state.recognition.onend = () => {
-                    state.voiceInputActive = false;
-                    updateVoiceButton();
-                };
-            }
-        }
-
+```javascript
         function toggleVoiceInput() {
             if (!state.recognition) {
                 showNotification('Voice input not supported in your browser', 'error');
@@ -1738,7 +1700,8 @@
             document.getElementById('theme-menu').classList.add('hidden');
             showNotification(`Theme changed to ${theme}`, 'success');
         }
-              // ==================== SETTINGS ====================
+
+        // ==================== SETTINGS ====================
         function saveApiKey(key) {
             state.apiKey = key;
             localStorage.setItem('umer_ai_api_key', key);
@@ -1897,8 +1860,8 @@
             a.click();
             URL.revokeObjectURL(url);
             showNotification('Chats exported', 'success');
-      }
-              // ==================== STATS ====================
+     }
+                // ==================== STATS ====================
         function updateStats() {
             const history = JSON.parse(localStorage.getItem('umer_ai_history') || '[]');
             let totalMessages = 0;
